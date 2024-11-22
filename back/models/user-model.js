@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const users= mongoose.Schema(
+const User = mongoose.Schema(
 {
     firstname: {type: String, minLength: 3, maxLength: 20, required: true},
     email: {type: String, required: true},
@@ -10,4 +10,4 @@ const users= mongoose.Schema(
     timestamps: {createdAT: true}
 }
 )
-export default mongoose.model("User", users)
+export default mongoose.model("User", User)
