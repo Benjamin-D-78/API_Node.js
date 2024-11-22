@@ -1,7 +1,0 @@
-1 - Se positionner
-2 - ligne de commande : "npm init"
-3 - ligne de commande : "npm i express"
-4 - On créé le server.js
-5 - On créé le .env
-6 - On installe les dépendances "dotenv" 
-7 - On installe les dépendances "express"
