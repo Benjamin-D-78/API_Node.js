@@ -3,8 +3,6 @@ import User from "../models/user-model.js";
 
 const router = express.Router();
 
-// Définition de nos middlewares :
-
 // GET : Si on précise "async", il faut préciser "await"
 router.get("/all", async (req, res) => {
     try{
@@ -59,5 +57,5 @@ router.delete("/delete/:idUser", async (req, res) => {
     }
 })
 
-// Exportation de tous nos router configurés :
+// Exportation de tous nos routers configurés :
 export default router;

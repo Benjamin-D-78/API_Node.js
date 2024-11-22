@@ -13,6 +13,8 @@ const PORT = process.env.PORT || 8080;
 
 mongoose.connect(process.env.MONGO_URI_LOCAL, {dbName: process.env.DB_NAME}).then(() => console.log("Connection à MongoDB réussie !")).catch(error => console.log(error))
 
+// Définition de nos middlewares :
+
 app.use(express.json());
 app.use("/api/user", User)
 app.use("/api/message", Message)
